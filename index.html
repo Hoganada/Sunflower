@@ -13,21 +13,53 @@
   height: 100%;
     
     
-    head {
+  h1 {
      text-align: center;
     }
     
-    p {
+  p {
     text-align: center;
     }
+    
+ .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
  
 
 </style>
 
 <body>
-<head> SunFlower</head>
+<h1> SunFlower</h1>
 <p>Sunflower Sunflower</p>
  
+  
+  
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
 
 
 
