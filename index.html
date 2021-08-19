@@ -31,27 +31,50 @@
     color: #250700;
     text-align: center;
     }
-    
- .topnav {
+  
+   /* Style the navigation menu */
+.topnav {
   overflow: hidden;
   background-color: #250700;
-  padding: 8px;
- }
-    
-  .topnav a {
-  float: left;
-  display: block;
-  color: Yellow;
-  text-align: center;
-  padding: 16px 14px;
-  text-decoration: none;
+  position: fixed;
+  
+}
+   /* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
 }
 
-/* Links - change color on hover */
+/* Style navigation menu links */
+.topnav a {
+  color: #250700;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: ;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #250700;
+  background-color: #ddd;
   color: black;
 }
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: black;
+  color: #FFC300;
+}
+
+
     
 .row {
   display: flex;
@@ -114,12 +137,24 @@
     <p><em>SunFlower, SunFlower</em></p>
 </div>
 
+<!-- Top Navigation Menu -->
 <div class="topnav">
   <a href="#home" class="active">Logo</a>
-  <a href="Home">Home</a>
-  <a href="About">About</a>
-  <a href="Contacts">Contacts</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#portfplio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+<nav id="navbar">
+  
+</nav>
+
      
  <div class="row">
   <div class="column1" style="background-color:transparent;">
